@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/re_detail"
+        android:padding="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/circle_img"
+            android:scaleType="fitXY"
+            android:layout_width="120dp"
+            android:layout_height="80dp"/>
+        <LinearLayout
+            android:id="@+id/lin_modle"
+            android:layout_toRightOf="@id/circle_img"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/circle_name"
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/font_gray_deep"
+                android:text="哈哈"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/circle_des"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/font_gray_deep"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="武汉市"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/circle_time"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/font_gray"
+                android:text="10-20 12:55"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/circle_user_name"
+            android:layout_alignBottom="@+id/lin_modle"
+            android:layout_width="wrap_content"
+            android:textColor="@color/font_gray"
+            android:text="呆子"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/circle_join"
+            android:layout_width="60dp"
+            android:text="加入圈子"
+            android:background="@drawable/btn_join_selector"
+            android:textSize="@dimen/space_12"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/space_10"
+            android:textColor="@color/white"
+            android:layout_height="25dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

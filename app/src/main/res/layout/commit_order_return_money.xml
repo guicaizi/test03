@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       tools:showIn="@layout/activity_apply_return_money">
+
+    <TextView
+        style="@style/amost_zhong_black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginLeft="@dimen/space_10"
+        android:gravity="center|left"
+        android:textColor="@color/red"
+        android:text="此商品支持7天退换"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/space_10"
+        android:background="#CCC"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_bg"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/amost_zhong_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:gravity="center|left"
+                android:textColor="@color/item_color"
+                android:text="订单编码"/>
+
+            <TextView
+                android:id="@+id/tv_oder_number"
+                style="@style/amost_zhong_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/item_color"
+                android:layout_marginRight="@dimen/space_10"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:background="#CCC"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/amost_zhong_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:gravity="center|left"
+                android:textColor="@color/item_color"
+                android:text="商品总价"/>
+
+            <TextView
+                android:id="@+id/tv_shop_total_price"
+                style="@style/amost_zhong_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/item_color"
+                android:layout_marginRight="@dimen/space_10"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:background="#CCC"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/amost_zhong_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:gravity="center|left"
+                android:textColor="@color/item_color"
+                android:text="折扣"/>
+
+            <TextView
+                android:id="@+id/tv_count_price"
+                style="@style/amost_zhong_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_10"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:background="#CCC"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/amost_zhong_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:gravity="center|left"
+                android:textColor="@color/item_color"
+                android:text="订单总价"/>
+
+            <TextView
+                android:id="@+id/tv_all_oder_price"
+                style="@style/amost_zhong_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/item_color"
+                android:layout_marginRight="@dimen/space_10"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:background="#CCC"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/amost_zhong_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:gravity="center|left"
+                android:textColor="@color/item_color"
+                android:text="已付款"/>
+
+            <TextView
+                android:id="@+id/tv_aready_pay"
+                style="@style/amost_zhong_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_10"
+                android:gravity="center"
+                android:textColor="@color/red"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:background="#CCC"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/amost_zhong_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:gravity="center|left"
+            android:text="退货理由："/>
+
+        <TextView
+            style="@style/amost_zhong_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:gravity="center"
+            android:textColor="@color/red"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_resone_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/amost_zhong_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:gravity="center|left"
+            android:text="预约不上"/>
+
+        <ImageView
+            android:id="@+id/iv_reson_one"
+            style="@style/amost_zhong_black"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:gravity="center"
+            android:src="@drawable/ic_uncheckone"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:background="#CCC"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_reson_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/amost_zhong_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:gravity="center|left"
+            android:text="商家营业但不接待"/>
+
+        <ImageView
+            android:id="@+id/iv_reson_two"
+            style="@style/amost_zhong_black"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:gravity="center"
+            android:src="@drawable/ic_uncheckone"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:background="#CCC"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/re_reson_thress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/amost_zhong_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:gravity="center|left"
+            android:text="其它理由"/>
+
+        <ImageView
+            android:id="@+id/iv_reson_thress"
+            style="@style/amost_zhong_black"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:gravity="center"
+            android:src="@drawable/ic_uncheckone"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:background="#CCC"/>
+    </RelativeLayout>
+
+
+
+</merge>

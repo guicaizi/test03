@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+
+    compileSdkVersion 27
+    defaultConfig {
+        javaCompileOptions
+                { annotationProcessorOptions { includeCompileClasspath = true } }
+        applicationId "com.yun.software.shangcheng"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'x86' //'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+
+    }
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-annotations:27.1.1'
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+            main.jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'shangchen'
+            keyPassword 'shangchen123'
+            storeFile file('D:/softyunapp/shangcheng/app/shangchen.jks')
+            storePassword 'shangchen123'
+        }
+    }
+    buildTypes {
+        release {
+            debuggable false
+            signingConfig signingConfigs.debug
+            //混淆
+            minifyEnabled false
+            //Zipalign优化 是否使用zipalign工具压缩
+            zipAlignEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "shangchen-${defaultConfig.versionCode}-${defaultConfig.versionName}-${releaseTime()}.apk"
+                }
+            }
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            debuggable false
+        }
+
+
+    }
+    //设置虚拟机堆内存空间大小，避免在编译期间OOM
+    dexOptions {
+        javaMaxHeapSize "3g"
+        preDexLibraries = false
+    }
+    //打包不检查
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        ignoreWarnings true
+        checkAllWarnings false
+    }
+    packagingOptions {
+        exclude('META-INF/LICENSE')
+    }
+    buildToolsVersion '27.0.1'
+}
+  configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '27.1.1'
+            }
+        }
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.10.0'
+    implementation 'com.yanzhenjie.nohttp:nohttp:1.1.10'
+    implementation 'com.yanzhenjie.nohttp:okhttp:1.1.10'
+    androidTestCompile('com.android.support:support-annotations:26.1.0') {
+        force = true
+    }
+    /**
+     *权限
+     */
+    implementation 'pub.devrel:easypermissions:1.3.0'
+    //点赞
+    compile 'com.wx.goodview:goodview:1.0.0'
+    implementation project(':corelibrary')
+    implementation project(':liushipop')
+    implementation project(':pulltorefresh')
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.youth.banner:banner:1.4.9'
+    implementation project(':verticlview')
+    implementation project(':pickerview')
+    implementation project(':agentweb')
+    implementation project(':shapeloading')
+    implementation project(':circledialog')
+}

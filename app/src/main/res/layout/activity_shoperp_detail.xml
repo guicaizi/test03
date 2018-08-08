@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="#ccc"
+        android:layout_height="@dimen/space_1"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/sv_mell_fresh"
+        style="@style/PullToRefresh_ptr"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:cacheColorHint="@android:color/transparent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/color_white">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_back"/>
+
+                <com.yun.software.shangcheng.ui.ViewWidget.ClearEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/img_shop_car"
+                    android:layout_toRightOf="@+id/iv_back"
+                    android:background="@drawable/search_shape_bg"
+                    android:drawableLeft="@drawable/img_shop_search"
+                    android:ellipsize="end"
+                    android:hint="@string/shop_search"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textNoSuggestions"
+                    android:longClickable="false"
+                    android:minHeight="35dp"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="15.0dip"/>
+
+                <ImageView
+                    android:id="@+id/img_shop_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_shop_cars_mall"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:indicator_drawable_selected="@drawable/shape_point_red"
+                    app:indicator_drawable_unselected="@drawable/shape_point_gray">
+                </com.youth.banner.Banner>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#33000000"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_vender_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="@dimen/space_30"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_vender_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_15"
+                        android:text="招财进宝"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/space_17"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_vender_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_strock_white_shape"
+                            android:drawableLeft="@drawable/whitespeak_icon"
+                            android:drawablePadding="@dimen/space_4"
+                            android:padding="@dimen/space_7"
+                            android:text="联系客服"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/space_15"/>
+
+                        <TextView
+                            android:id="@+id/id_vender_collect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:background="@drawable/round_strock_white_shape"
+                            android:drawableLeft="@drawable/collection_selector_vender"
+                            android:drawablePadding="@dimen/space_4"
+                            android:padding="@dimen/space_7"
+                            android:text="店铺收藏"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/space_15"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <include layout="@layout/shoper_detial_modile_one"/>
+            <include layout="@layout/shoper_detial_modile_two"/>
+            <com.yun.software.touhang.ui.main.utils.NoScrollGridView
+                android:layout_marginTop="@dimen/space_10"
+                android:id="@+id/gv_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="2"
+                android:layout_marginRight="@dimen/space_8"
+                android:layout_marginLeft="@dimen/space_8"
+                android:horizontalSpacing="8dp"
+                android:scrollbars="none"
+                >
+            </com.yun.software.touhang.ui.main.utils.NoScrollGridView>
+
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/tv_feedback"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_15"
+            android:text="投诉"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_width="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_3"
+            android:layout_marginBottom="@dimen/space_3"
+            android:background="#ccc"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:id="@+id/re_classfiy"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/space_15"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/morewhite"
+                android:drawablePadding="@dimen/space_5"
+                android:text="商品分类"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/space_1"
+            android:layout_marginTop="@dimen/space_3"
+            android:background="#ccc"
+            android:layout_marginBottom="@dimen/space_3"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_detial_contact"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_15"
+            android:text="联系客服"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    
+</LinearLayout>

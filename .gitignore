@@ -1,0 +1,16 @@
+*.iml
+.gradle
+/.idea
+/local.properties
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+/circledialog
+/durban
+/liushipop
+/pickerview
+/pulltorefresh
+/shapeloading
+/verticlview
+/agentweb

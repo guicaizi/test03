@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="购物车"
+            android:textColor="@color/font_color_black"
+            android:textSize="15sp"/>
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_back"/>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#CCC"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_white"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_back"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_marginRight="@dimen/space_5"
+            android:layout_toRightOf="@+id/iv_back"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_shop_car"
+            android:background="@drawable/search_shape_bg"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_width="wrap_content"
+                android:src="@drawable/img_shop_search"
+                android:layout_height="wrap_content"/>
+            <com.yun.software.shangcheng.ui.ViewWidget.ClearEditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_shape_bg"
+                android:hint="@string/shop_search"
+                android:minHeight="35dp"
+                android:longClickable="false"
+                android:inputType="textNoSuggestions"
+                android:imeOptions="actionSearch"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="15.0dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_shop_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_shop_cars_mall"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/re_defalut"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+            <LinearLayout
+                android:id="@+id/lin_defalut"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_deult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="默认排序"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="@dimen/space_15"/>
+                <ImageView
+                    android:id="@+id/iv_defalut"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:layout_width="match_parent"
+                    android:background="@color/red"
+                    android:visibility="invisible"
+                    android:layout_height="2dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_sale"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+            <LinearLayout
+                android:id="@+id/lin_sale"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="销量"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="@dimen/space_15"/>
+                <ImageView
+                    android:id="@+id/iv_sale"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:layout_width="match_parent"
+                    android:background="@color/red"
+                    android:visibility="invisible"
+                    android:layout_height="2dp"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_inditator_sale"
+                android:layout_toRightOf="@+id/lin_sale"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_down_ditactor"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+        android:id="@+id/re_price"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+        <LinearLayout
+            android:id="@+id/lin_price"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="价格"
+                android:textColor="@color/font_color_black"
+                android:textSize="@dimen/space_15"/>
+            <ImageView
+                android:id="@+id/iv_price"
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:background="@color/red"
+                android:layout_height="2dp"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_inditator_price"
+            android:layout_toRightOf="@+id/lin_price"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_down_ditactor"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_price"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+            <LinearLayout
+
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/all_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="全部分类"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="@dimen/space_15"/>
+                <ImageView
+
+                    android:layout_marginTop="@dimen/space_5"
+                    android:layout_width="match_parent"
+                    android:visibility="invisible"
+                    android:background="@color/red"
+                    android:layout_height="2dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:layout_width=""-->
+        <!--android:layout_height=""></android.support.v4.view.ViewPager>-->
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        style="@style/PullToRefresh_ptr"
+        android:background="@color/color_white"
+        android:overScrollMode="never"
+        android:fadingEdge="none"
+        android:id="@+id/my_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/space_8"
+        android:layout_marginLeft="@dimen/space_8"
+        android:horizontalSpacing="8dp"
+        android:numColumns="2"
+        android:divider="@null"
+        android:listSelector="@color/transparent"/>
+
+
+</LinearLayout>

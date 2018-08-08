@@ -1,0 +1,26 @@
+ext {
+    plugins = [
+            application: 'com.android.application',
+            library    : 'com.android.library',
+            maven      : 'com.github.dcendents.android-maven',
+            bintray    : 'com.jfrog.bintray'
+    ]
+
+    android = [
+            applicationId       : "com.yanzhenjie.durban.sample",
+            compileSdkVersion   : 27,
+            buildToolsVersion   : "26.0.2",
+            libraryMinSdkVersion: 21,
+            sampleMinSdkVersion : 21,
+            targetSdkVersion    : 27,
+            versionCode         : 2,
+            versionName         : "1.0.1"
+    ]
+
+    dependencies = [
+            appcompat: 'com.android.support:appcompat-v7:27.+',
+            loading  : 'com.yanzhenjie:loading:1.0.0',
+            recyclerview: "com.android.support:recyclerview-v7:27.+",
+            lottie      : "com.airbnb.android:lottie:2.5.4"
+    ]
+}

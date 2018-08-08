@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:text="写日记"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/font_color_black"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_back"/>
+        <TextView
+            android:id="@+id/tv_feedback_sure"
+            android:layout_width="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/font_gray"
+            android:text="发送"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/round_strock_gray_shape"
+            android:layout_height="26dp"/>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#CCC"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_diary_write"
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:padding="@dimen/space_10"
+                android:hint="分享你的美"
+                android:gravity="left|top"
+                android:textSize="@dimen/space_14"
+                android:textColor="@color/font_color_black"
+                android:imeOptions="actionDone"
+                android:background="@color/transparent"/>
+            <TextView
+                android:id="@+id/tv_diary_location"
+                android:layout_width="match_parent"
+                android:padding="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/space_10"
+                android:drawableLeft="@drawable/adressnine_gray"
+                android:textColor="@color/font_gray"
+                android:hint="你在哪儿"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传图片 "
+                    android:textColor="@color/font_color_black"
+                    android:textSize="@dimen/space_14"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:text="(最多可以上传九张)"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/space_12"/>
+            </LinearLayout>
+            <com.yun.software.touhang.ui.main.utils.NoScrollGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_5"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="2dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

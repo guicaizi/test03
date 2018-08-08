@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color_light"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_top" />
+    <LinearLayout
+        android:id="@+id/lin_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            android:layout_weight="1"
+            android:id="@+id/sc_score"
+            android:scrollbars="none"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <include layout="@layout/user_infor"/>
+                <ListView
+                    android:id="@+id/list_vips"
+                    android:dividerHeight="10dp"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:overScrollMode="never"
+                    android:divider="@null"
+                    android:scrollbars="none"
+                    android:background="@color/white"
+                    android:listSelector="@color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:visibility="visible"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:paddingBottom="@dimen/space_10"
+                    android:paddingTop="@dimen/space_10"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/et_input_phone"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:layout_height="40dp"
+                        android:background="@drawable/round_strock_gray_shape"
+                        android:hint="@string/mobile_hint"
+                        android:paddingLeft="@dimen/space_20"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:textSize="14dp" />
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/space_20"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/space_30"
+                        android:paddingLeft="10dp">
+                        <EditText
+                            android:id="@+id/et_regist_code"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_strock_gray_shape"
+                            android:hint="@string/mobile_hint"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:paddingLeft="20dp"
+                            android:textSize="14dp" />
+                        <Button
+                            android:id="@+id/btn_get_regist_code"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/round_yellow_shape"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="1dp"
+                            android:paddingRight="1dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/obtain_verification_code"
+                            android:textColor="@color/color_white"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color_light"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="总额：￥13.9"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:textSize="14dp"
+                android:textColor="@color/yellow_shape"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="90dp"
+                android:background="@color/yellow_shape"
+                android:text="支付"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_14"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

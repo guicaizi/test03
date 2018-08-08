@@ -1,0 +1,156 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/red</item>
+    </style>
+    <style name="AppTheme2" parent="android:Theme.NoTitleBar">
+    </style>
+    <style name="MyDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--全屏显示-->
+        <item name="android:windowFullscreen">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:background">#33333333</item>
+    </style>
+    <style name="dialog_normal" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+    <style name="ShopTabDialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+
+    </style>
+    <style name="StyleActivity">
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/activity_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- 自定义 PullToRefresh -->
+    <style name="PullToRefresh_ptr">
+        <item name="android:scrollbars">none</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:gravity">center</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="com.yun.software.shangcheng:ptrMode">both</item>
+        <item name="com.yun.software.shangcheng:ptrListViewExtrasEnabled">false</item>
+        <item name="com.yun.software.shangcheng:ptrHeaderTextColor">@color/color_999999</item>
+        <item name="com.yun.software.shangcheng:ptrShowIndicator">false</item>
+    </style>
+    <style name="PullToRefresh_ptr_Normal">
+        <item name="android:scrollbars">none</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:gravity">center</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="com.yun.software.shangcheng:ptrMode">disabled</item>
+        <item name="com.yun.software.shangcheng:ptrListViewExtrasEnabled">false</item>
+        <item name="com.yun.software.shangcheng:ptrHeaderTextColor">@color/color_999999</item>
+        <item name="com.yun.software.shangcheng:ptrShowIndicator">false</item>
+    </style>
+
+    <style name="normal_font">
+        <item name="android:textSize">@dimen/space_12</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+    <style name="normal_font14">
+        <item name="android:textSize">@dimen/space_14</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+    <style name="popupwindow_AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+    <style name="moddle_gray_font">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">@dimen/space_16.5</item>
+    </style>
+    <!-- 仿IOS的dialog -->
+    <style name="UIAlertViewStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="amost_zhong_black">
+        <item name="android:textColor">@color/font_color_black</item>
+        <item name="android:textSize">@dimen/space_15</item>
+    </style>
+
+    <style name="loading_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+
+    <style name="TabNavigation">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@color/txt_tab_selector</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="StyleImmersionActivity">
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:orientation">vertical</item>
+        <!-- 状态栏沉浸 <<<<<<<<<<<<<<<<< -->
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <!-- 状态栏沉浸 >>>>>>>>>>>>>>>>> -->
+    </style>
+    <style name="QMUI.BottomSheet" parent="android:Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null
+        </item><!-- 为了避免在有 NavigationBar 的手机上 Dialog 从 NavigationBar 底部上来。去掉 Dialog 的动画，使用 View 的动画。-->
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+</resources>

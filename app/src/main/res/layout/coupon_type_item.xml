@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/lin_choice_all"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+
+
+        <TextView
+            android:id="@+id/tv_coupon_name"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/space_14"
+            android:textColor="@color/font_color_black"
+            android:text="省10元：组合优惠"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_coupon_state"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_uncheckone"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

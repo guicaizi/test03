@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="@dimen/space_10"
+        android:id="@+id/tv_shop_name"
+        android:textColor="@color/font_color_black"
+        android:layout_marginLeft="@dimen/space_10"
+        android:textSize="15dp"
+        android:text="Mystyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      />
+
+    <com.yun.software.touhang.ui.main.ViewWidget.NestListView
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space_10"
+        android:id="@+id/list_item_content_nlv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/commit_order_des"/>
+</LinearLayout>

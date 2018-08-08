@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+
+    <include  layout="@layout/comment_search_title"/>
+    <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:background="@color/color_white"
+       android:overScrollMode="never"
+       android:scrollbars="none">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
+           <include
+               android:id="@+id/ic_main_recommend"
+               layout="@layout/fragment_shop_recommend"
+               android:layout_width="match_parent"
+               android:layout_height="150dp" />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:gravity="center"
+               android:layout_height="50dp">
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:background="@color/font_color_black"
+                   android:layout_height="1dp"/>
+
+               <TextView
+                   android:layout_marginLeft="@dimen/space_10"
+                   android:layout_marginRight="@dimen/space_10"
+                   android:textColor="@color/font_color_black"
+                   android:layout_width="wrap_content"
+                   android:text="秀无止境"
+                   android:textSize="@dimen/space_15"
+                   android:layout_height="wrap_content"/>
+               <ImageView
+                   android:layout_width="30dp"
+                   android:background="@color/font_color_black"
+                   android:layout_height="1dp"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:gravity="center_vertical"
+               android:layout_height="223dp">
+               <ImageView
+                   android:paddingLeft="2dp"
+                   android:id="@+id/img_xiu_left"
+                   android:layout_width="0dp"
+                   android:layout_weight="4.45"
+                   android:scaleType="centerInside"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="@dimen/space_10"
+                   />
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_weight="4"
+                   android:layout_gravity="center_vertical"
+                   android:gravity="center_horizontal"
+                   android:orientation="vertical"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/space_15"
+                       android:textColor="@color/red"
+                       android:text="秀出不一样的你"/>
+                   <ImageView
+                       android:id="@+id/img_xiu_right"
+                       android:layout_marginTop="@dimen/space_10"
+                       android:layout_width="@dimen/space_50"
+                       android:scaleType="centerCrop"
+                       android:layout_height="@dimen/space_50"/>
+                   <TextView
+                       android:id="@+id/tv_xiu_name"
+                       android:layout_marginTop="@dimen/space_10"
+                       android:textSize="@dimen/space_13"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/red"
+                       />
+                   <TextView
+                       android:id="@+id/tv_xiu_like"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:drawableLeft="@drawable/img_my_love"
+                       android:drawablePadding="@dimen/space_5"
+                       android:layout_marginTop="@dimen/space_10"
+                       android:textSize="@dimen/space_13"
+                       android:textColor="@color/red"
+                       android:text="2"/>
+                   <TextView
+                       android:id="@+id/tv_xiu_show"
+                       android:layout_marginTop="@dimen/space_10"
+                       android:layout_width="@dimen/space_100"
+                       android:text="@string/cliick_show"
+                       android:gravity="center"
+                       android:textSize="@dimen/space_14"
+                       android:textColor="@color/white"
+                       android:background="@drawable/fillet_red_shape_bg"
+                       android:layout_height="@dimen/space_24"/>
+
+
+               </LinearLayout>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:gravity="center"
+               android:layout_height="50dp">
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:background="@color/font_color_black"
+                   android:layout_height="1dp"/>
+
+               <TextView
+                   android:layout_marginLeft="@dimen/space_10"
+                   android:layout_marginRight="@dimen/space_10"
+                   android:textColor="@color/font_color_black"
+                   android:layout_width="wrap_content"
+                   android:text="美无极限"
+                   android:textSize="@dimen/space_15"
+                   android:layout_height="wrap_content"/>
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:background="@color/font_color_black"
+                   android:layout_height="1dp"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_height="200dp">
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:background="@drawable/bg_divide_line"
+                   android:layout_height="@dimen/space_1"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:orientation="horizontal"
+                   android:layout_height="0dp"
+                   android:layout_weight="1">
+                   <ImageView
+                       android:id="@+id/imageView"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/img_home_first"
+                       android:scaleType="centerInside"
+                       android:layout_weight="1"/>
+                   <ImageView
+                       android:layout_width="1dp"
+                       android:background="@drawable/bg_divide_line"
+                       android:layout_height="match_parent"/>
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:orientation="vertical"
+                       android:layout_height="match_parent">
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="0dp"
+                           android:src="@drawable/img_home_left_up"
+                           android:scaleType="centerInside"
+                           android:layout_weight="1"/>
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:background="@drawable/bg_divide_line"
+                           android:layout_height="@dimen/space_1"/>
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="0dp"
+                           android:scaleType="centerInside"
+                           android:src="@drawable/img_home_left"
+                           android:layout_weight="1"/>
+                   </LinearLayout>
+
+               </LinearLayout>
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:background="@drawable/bg_divide_line"
+                   android:layout_height="@dimen/space_1"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:gravity="center"
+               android:layout_height="50dp">
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:background="@color/font_color_black"
+                   android:layout_height="1dp"/>
+
+               <TextView
+                   android:layout_marginLeft="@dimen/space_10"
+                   android:layout_marginRight="@dimen/space_10"
+                   android:textColor="@color/font_color_black"
+                   android:layout_width="wrap_content"
+                   android:text="周边时尚店"
+                   android:textSize="@dimen/space_15"
+                   android:layout_height="wrap_content"/>
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:background="@color/font_color_black"
+                   android:layout_height="1dp"/>
+
+           </LinearLayout>
+           <com.yun.software.touhang.ui.main.ViewWidget.NoScrollListView
+               android:fadingEdge="none"
+               android:id="@+id/my_shop_list"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:divider="@null"
+               android:listSelector="@color/transparent"
+               >
+           </com.yun.software.touhang.ui.main.ViewWidget.NoScrollListView>
+
+       </LinearLayout>
+
+
+
+   </ScrollView>
+
+
+</LinearLayout>

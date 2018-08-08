@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+>
+
+    <RelativeLayout
+        android:id="@+id/re_detial_tag"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_detial_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="默认"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_13"/>
+
+        <ImageView
+            android:id="@+id/iv_detial_tag"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_alignLeft="@+id/tv_detial_tag"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/tv_detial_tag"
+            android:background="@color/black"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_detial_tag1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_detial_tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="最新"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_13"/>
+
+        <ImageView
+            android:id="@+id/iv_detial_tag1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_alignLeft="@+id/tv_detial_tag1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/tv_detial_tag1"
+            android:background="@color/black"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_detial_tag2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_detial_tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="热销"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_13"/>
+
+        <ImageView
+            android:id="@+id/iv_detial_tag2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_alignLeft="@+id/tv_detial_tag2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/tv_detial_tag2"
+            android:background="@color/black"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_detial_tag3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_detial_tag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="价格"
+            android:textColor="@color/black"
+            android:textSize="@dimen/space_13"/>
+
+        <ImageView
+            android:id="@+id/iv_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_detial_tag3"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_toRightOf="@+id/tv_detial_tag3"
+            android:src="@drawable/ic_down_ditactor"/>
+
+        <ImageView
+            android:id="@+id/iv_detial_tag3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_alignLeft="@+id/tv_detial_tag3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/tv_detial_tag3"
+
+            android:background="@color/black"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+        

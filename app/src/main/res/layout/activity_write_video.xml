@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="上传视频"
+            android:textColor="@color/font_color_black"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_back"/>
+
+        <TextView
+            android:id="@+id/tv_send_video"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/round_strock_gray_shape"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/font_gray"/>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#CCC"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_video_title"
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:background="@color/transparent"
+                android:gravity="left|top"
+                android:hint="说点什么"
+                android:imeOptions="actionDone"
+                android:padding="@dimen/space_10"
+                android:textColor="@color/font_color_black"
+                android:textSize="@dimen/space_14"/>
+            <View
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:background="@color/color_gray"
+                android:layout_height="1dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_choice_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/record_icon"
+                android:gravity="center"
+                android:hint="录制视频"
+                android:padding="@dimen/space_10"
+                android:textColor="@color/color_gray"/>
+
+            <TextView
+                android:id="@+id/tv_diary_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/adressnine_gray"
+                android:drawablePadding="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:hint="你在哪儿"
+                android:padding="@dimen/space_10"
+                android:textColor="@color/font_gray"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/re_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:background="@drawable/hui_close"/>
+
+                <cn.jzvd.JZVideoPlayerStandard
+                    android:id="@+id/jz_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/img_delete"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_10"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

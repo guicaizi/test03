@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="40dp"
+    tools:showIn="@layout/fragment_shop_home">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/image_borderone"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:textColor="@color/color_black"
+        android:layout_width="wrap_content"
+        android:text="秀无止境"
+        android:textSize="@dimen/space_14"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/image_borderone"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

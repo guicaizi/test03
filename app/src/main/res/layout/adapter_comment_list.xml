@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_10"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_msg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/head_icon"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/re_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10">
+
+                <TextView
+                    android:id="@+id/tv_msg_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/tv_msg_time"
+                    android:textColor="@color/font_color_black"
+                    android:text="遇见感觉"
+                    android:textSize="@dimen/secont_title"/>
+
+                <TextView
+                    android:id="@+id/tv_msg_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/color_999999"
+                    android:text="2018-12-24 05:33:33"
+                    android:textSize="@dimen/secont_title"/>
+
+                <TextView
+                    android:id="@+id/tv_meg_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tv_msg_title"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:textColor="@color/color_999999"
+                    android:text="日前，工信部发布了《2018年4月份通信业经济运行情况》。数据显示，1-4月，电信业务总量完成15376亿元，同比增长125%。电信业务收入完成4431亿元，同比增长4.5%。"
+                    android:textSize="@dimen/secont_title"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

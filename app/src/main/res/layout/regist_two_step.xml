@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       tools:showIn="@layout/activity_shoper_into">
+
+
+    <EditText
+        android:id="@+id/et_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/transparent"
+        android:gravity="center_vertical"
+        android:hint="请填写店铺名称"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/space_13"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/color_bg"/>
+
+    <EditText
+        android:id="@+id/et_shop_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/transparent"
+        android:gravity="center_vertical"
+        android:hint="请填写主营类型"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/space_13"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/color_bg"/>
+
+
+    <LinearLayout
+        android:paddingTop="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:gravity="left"
+            android:text="申请人类型"
+            android:textSize="@dimen/space_13"
+            android:textColor="@color/color_555555"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_chek_one"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_uncheckone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:text="个人"
+                android:textColor="@color/color_555555"
+                android:textSize="@dimen/space_13"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_chek_two"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_uncheckone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:text="企业"
+                android:textColor="@color/color_555555"
+                android:textSize="@dimen/space_13"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:paddingTop="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:gravity="left"
+            android:text="店铺类型"
+            android:textSize="@dimen/space_13"
+            android:textColor="@color/color_555555"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_chek_three"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_uncheckone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:text="网店"
+
+                android:textColor="@color/color_555555"
+                android:textSize="@dimen/space_13"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_chek_four"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_uncheckone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:text="理发店"
+                android:textColor="@color/color_555555"
+                android:textSize="@dimen/space_13"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</merge>

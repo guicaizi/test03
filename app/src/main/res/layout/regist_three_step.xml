@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       tools:showIn="@layout/activity_shoper_into">
+
+
+    <RelativeLayout
+        android:id="@+id/re_one"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/round_strock_black_shape"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/timg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#bb244D5A"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_14"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:text="上传身份证正面"
+            android:layout_height="40dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_two"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_10"
+        android:padding="@dimen/space_5"
+        android:background="@drawable/round_strock_black_shape"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/timg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#bb244D5A"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_14"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:text="上传身份证反面面"
+            android:layout_height="40dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_three"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_10"
+        android:padding="@dimen/space_5"
+        android:background="@drawable/round_strock_black_shape"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/timg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#bb244D5A"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_14"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:text="上传手持身份证"
+            android:layout_height="40dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_four"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/round_strock_black_shape"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_four"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/timg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#bb244D5A"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_14"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:text="上传营业执照"
+            android:layout_height="40dp"/>
+
+
+    </RelativeLayout>
+</merge>

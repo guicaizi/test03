@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              style="@style/StyleActivity">
+    <include  layout="@layout/comment_search_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lin_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <q.rorbin.verticaltablayout.VerticalTabLayout
+            android:paddingTop="20dp"
+            android:overScrollMode="never"
+            android:id="@+id/verticalview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F7F9FC"
+            android:visibility="visible"
+            app:indicator_color="@color/vertical_sild_bar_color"
+            app:indicator_gravity="left"
+            app:indicator_width="5dp"
+            app:tab_height="55dp"
+            app:tab_mode="scrollable" />
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:overScrollMode="never"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_topIcon"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"/>
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.yun.software.shangcheng.ui.ViewWidget.NoScrollListView
+                        android:overScrollMode="never"
+                        android:scrollbars="none"
+                        android:id="@+id/sc_grid"
+                        android:dividerHeight="0dp"
+                        android:divider="@color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

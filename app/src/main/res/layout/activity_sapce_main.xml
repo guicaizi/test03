@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_above="@+id/v_line"
+        android:id="@+id/Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="@dimen/space_3"
+        android:background="#ABA8A8"
+        android:layout_above="@+id/gr_check"
+        />
+
+    <RadioGroup
+        android:id="@+id/gr_check"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_1"
+        android:baselineAligned="false"
+        >
+        <RadioButton
+            android:id="@+id/Generic_Rb01"
+            style="@style/TabNavigation"
+            android:text="@string/shop_activity"
+            android:drawableTop="@drawable/tab_shop_action_selector"
+            android:button="@null"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/Generic_Rb02"
+            style="@style/TabNavigation"
+            android:text="@string/shop_live_show"
+            android:drawableTop="@drawable/tab_shop_liveshwo_selector"
+            android:button="@null"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/Generic_Rb03"
+            style="@style/TabNavigation"
+            android:text="@string/shop_creat"
+            android:drawableTop="@drawable/tab_shop_biautiful_selector"
+            android:button="@null"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/Generic_Rb04"
+            style="@style/TabNavigation"
+            android:text="@string/shop_circle"
+            android:drawableTop="@drawable/tab_shop_circle_selector"
+            android:button="@null"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/Generic_Rb05"
+            style="@style/TabNavigation"
+            android:text="@string/shop_my_space"
+            android:drawableTop="@drawable/tab_shop_myspcace_selector"
+            android:button="@null"
+            android:checked="true"
+            />
+    </RadioGroup>
+    <ImageView
+        android:id="@+id/iv_botton"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="5dp"
+        android:src="@drawable/buildone" />
+
+    <ImageView
+        android:id="@+id/iv_four"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        />
+
+
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:id="@+id/tv_buy"
+        android:gravity="center"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:text="买"
+        android:textSize="26sp"
+        android:layout_marginTop="200sp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:background="@drawable/circle_buy_shape"/>
+</RelativeLayout>

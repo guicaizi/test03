@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/fl_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_white"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/lin_login">
+        <Button
+            android:id="@+id/btn_login_weixin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="false"
+            android:background="@drawable/wexin" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingTop="@dimen/space_10"
+            android:textColor="@color/font_color_black"
+            android:textSize="@dimen/space_16"
+            android:text="微信登录"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="69dp"
+        android:text="默认登录方式"/>
+
+</RelativeLayout>

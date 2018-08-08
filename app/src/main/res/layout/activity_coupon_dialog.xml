@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_white"
+              android:orientation="vertical">
+    <com.yun.software.shangcheng.ui.ViewWidget.MaxScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:mhv_HeightDimen="400dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:descendantFocusability="blocksDescendants"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_pin_tai"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/space_14"
+                android:text="平台优惠券"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+            <com.yun.software.shangcheng.ui.ViewWidget.NoScrollListView
+                android:id="@+id/listview_coupon_one"
+                android:layout_width="match_parent"
+                android:focusable="false"
+                android:dividerHeight="0dp"
+                android:divider="@color/transparent"
+                android:layout_height="wrap_content">
+
+            </com.yun.software.shangcheng.ui.ViewWidget.NoScrollListView>
+            <TextView
+                android:id="@+id/tv_dian_pu"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/space_14"
+                android:visibility="gone"
+                android:text="店铺优惠券"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+            <com.yun.software.shangcheng.ui.ViewWidget.NoScrollListView
+                android:visibility="gone"
+                android:id="@+id/listview_coupon"
+                android:layout_width="match_parent"
+                android:dividerHeight="0dp"
+                android:divider="@color/transparent"
+                android:focusable="false"
+                android:layout_height="wrap_content">
+
+            </com.yun.software.shangcheng.ui.ViewWidget.NoScrollListView>
+
+        </LinearLayout>
+
+
+    </com.yun.software.shangcheng.ui.ViewWidget.MaxScrollView>
+
+    <TextView
+        android:id="@+id/tv_complete"
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="完成"
+        android:layout_marginTop="@dimen/space_10"
+        android:textSize="@dimen/space_14"
+        android:layout_height="40dp"/>
+    
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="55dp">
+        <ImageView
+            android:layout_width="46dp"
+            android:src="@mipmap/transport"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="46dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_msg_name"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/font_color_black"
+                    android:text="物流通知"
+                    android:textSize="@dimen/space_12"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_msg_time"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/font_gray"
+                    android:gravity="right"
+                    android:text="2018.7.23 12:55:33"
+                    android:textSize="@dimen/space_12"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_msg_des"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="wrap_content"
+                android:text="您得订单已发货"
+                android:layout_marginLeft="@dimen/space_10"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/font_color_black"
+                android:textSize="@dimen/space_12"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+       </LinearLayout>
+
+    </LinearLayout>
+
+

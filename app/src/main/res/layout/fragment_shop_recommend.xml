@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 推荐广告 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:orientation="vertical" >
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:src="@drawable/img_back"
+        android:layout_height="wrap_content"/>
+
+    <com.yun.software.touhang.ui.main.ViewWidget.MyViewPager
+        android:id="@+id/vp_main_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_main_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:background="@color/white">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:baselineAligned="false"
+        >
+
+        <RadioButton
+            android:id="@+id/Generic_Rb01"
+            style="@style/TabNavigation"
+            android:text="@string/shop_home"
+            android:drawableTop="@drawable/tab_shop_home_selector"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/Generic_Rb02"
+            style="@style/TabNavigation"
+            android:text="@string/shop_Mall"
+            android:drawableTop="@drawable/tab_shop_mall_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/Generic_Rb03"
+            style="@style/TabNavigation"
+            android:text="@string/shop_beautiful"
+            android:drawableTop="@drawable/tab_shop_biautiful_selector"
+            />
+        <RadioButton
+            android:id="@+id/Generic_Rb04"
+            style="@style/TabNavigation"
+            android:text="@string/shop_car"
+            android:drawableTop="@drawable/tab_shop_car_selector"
+            />
+        <RadioButton
+            android:id="@+id/Generic_Rb05"
+            style="@style/TabNavigation"
+            android:text="@string/shop_my"
+            android:drawableTop="@drawable/tab_shop_my_selector"
+            />
+
+    </RadioGroup>
+
+</FrameLayout>

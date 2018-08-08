@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/color_white"
+   >
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/font_color_black"
+        android:text="城市"
+        android:maxLength="3"
+        android:ellipsize="end"
+        android:visibility="gone"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="48dp"
+        android:src="@drawable/img_back"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_5"
+        android:layout_toRightOf="@+id/iv_back"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/img_alerme"
+        android:background="@drawable/search_shape_bg"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_width="wrap_content"
+            android:src="@drawable/img_shop_search"
+            android:layout_height="wrap_content"/>
+        <com.yun.software.shangcheng.ui.ViewWidget.ClearEditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_shape_bg"
+            android:hint="@string/shop_search"
+            android:minHeight="35dp"
+            android:longClickable="false"
+            android:inputType="textNoSuggestions"
+            android:imeOptions="actionSearch"
+            android:padding="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="15.0dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_alerme"
+        android:layout_width="40dp"
+        android:src="@drawable/img_shop_alerme"
+        android:scaleType="centerInside"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="40dp"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_message_number"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/img_alerme"
+        android:layout_marginRight="@dimen/space_5"
+        android:layout_marginTop="3dp"
+        android:layout_width="20dp"
+        android:background="@drawable/circle_red_custom_shape"
+        android:text="0"
+        android:textSize="@dimen/space_10"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_height="20dp"/>
+
+</RelativeLayout>

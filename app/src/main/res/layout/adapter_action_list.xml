@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:padding="@dimen/space_10">
+
+        <ImageView
+            android:id="@+id/action_show_img"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_action_radius"
+            android:padding="@dimen/space_10">
+
+            <TextView
+                android:id="@+id/action_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/peoplenum"
+                android:drawablePadding="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:text="湖北省武汉 2017年9月14号 02:00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12"/>
+
+            <TextView
+                android:id="@+id/action_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/peoplenum"
+                android:drawablePadding="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:text="2/2 人"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="@dimen/space_10">
+
+        <LinearLayout
+            android:id="@+id/lin_left_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/lin_icon"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/action_user_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:src="@drawable/maozi"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/action_username"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="呆子"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/space_12"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_toRightOf="@+id/lin_left_one"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/action_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="哈哈哈哈"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/space_12"/>
+
+            <TextView
+                android:id="@+id/action_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:text="发布内容啦啦啦啦啦"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/space_12"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/action_detail"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_red_shape"
+            android:text="详情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_12"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

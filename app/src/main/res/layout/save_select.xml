@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_divide_line"
+        android:contentDescription="@null" />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/listview_item_bg"
+        android:text="保存到本地"
+        android:textColor="@color/color_333333"
+        android:textSize="22dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_divide_line"
+        android:contentDescription="@null" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_divide_line"
+        android:contentDescription="@null" />
+    <Button
+        android:id="@+id/btn_cancel1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/listview_item_bg"
+        android:text="取消"
+        android:textColor="@color/color_333333"
+        android:textSize="22dp" />
+
+</LinearLayout>

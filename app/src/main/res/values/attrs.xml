@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="MyRatingBar">
+        <attr name="space_width" format="dimension"></attr>
+        <attr name="star_width" format="dimension"></attr>
+        <attr name="star_height" format="dimension"></attr>
+        <attr name="star_max" format="integer"></attr>
+        <attr name="star_rating" format="float"></attr>
+        <attr name="star_hollow" format="reference"></attr>
+        <attr name="star_solid" format="reference"></attr>
+        <attr name="star_isIndicator" format="boolean"></attr>
+        <attr name="star_orientation" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="NumberButton">
+        <attr name="editable" format="boolean"/>
+        <attr name="buttonWidth" format="dimension"/>
+        <attr name="textWidth" format="dimension"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="RichText">
+        <attr name="drawable_src" format="reference"/>
+        <attr name="drawable_height" format="dimension"/>
+        <attr name="drawable_width" format="dimension"/>
+        <attr name="drawable_location">
+            <enum name="left" value="1"/>
+            <enum name="top" value="2"/>
+            <enum name="right" value="3"/>
+            <enum name="bottom" value="4"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean"/>
+        <attr name="primaryColor" format="color"/>
+        <attr name="primaryColorDark" format="color"/>
+        <attr name="isOpened" format="boolean"/>
+    </declare-styleable>
+    <string-array name="news_viewpage_arrays">
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+        <item>退换货</item>
+        <item>已结束</item>
+    </string-array>
+    <declare-styleable name="AutoDrawableTextView">
+        <attr name="left_height" format="dimension"/>
+        <attr name="left_width" format="dimension"/>
+        <attr name="right_height" format="dimension"/>
+        <attr name="right_width" format="dimension"/>
+        <attr name="top_height" format="dimension"/>
+        <attr name="top_width" format="dimension"/>
+        <attr name="bottom_height" format="dimension"/>
+        <attr name="bottom_width" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="voucherView">
+
+        <attr name="drawType">
+            <enum name="circle" value="0"/>
+            <enum name="ellipse" value="1"/>
+            <enum name="triangle" value="2"/>
+            <enum name="square" value="3"/>
+        </attr>
+
+        <attr name="orientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+            <enum name="around" value="2"/>
+        </attr>
+
+        <attr name="mGap" format="dimension"/>
+        <attr name="mRadius" format="dimension"/>
+        <attr name="BgColor" format="color"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="DashView">
+        <attr name="dashWidth" format="dimension"/>
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="lineHeight" format="dimension"/>
+        <attr name="lineColor" format="color"/>
+        <attr name="dashOrientation" format="integer"/>
+
+    </declare-styleable>
+
+</resources>

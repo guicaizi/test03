@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="horizontal"
+    android:background="@color/white" >
+
+    <com.yun.software.touhang.ui.main.ViewWidget.AutoDrawableTextView
+        android:id="@+id/popwindow_share_weixin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:drawableTop="@drawable/ic_share_weixin"
+        android:gravity="center"
+        android:text="微信朋友圈"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:top_height="50dp"
+        app:top_width="50dp" />
+    
+    <com.yun.software.touhang.ui.main.ViewWidget.AutoDrawableTextView
+        android:id="@+id/popwindow_share_weixin_friend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:drawableTop="@drawable/ic_share_weixin"
+        android:gravity="center"
+        android:text="微信好友"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:top_height="50dp"
+        app:top_width="50dp" />
+
+</LinearLayout>

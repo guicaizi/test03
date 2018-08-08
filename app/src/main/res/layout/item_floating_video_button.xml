@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+<com.github.clans.fab.FloatingActionMenu
+    android:id="@+id/menu_red"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:paddingRight="25dp"
+    android:paddingBottom="25dp"
+    fab:menu_colorNormal="@color/color_buy"
+    fab:menu_colorPressed="@color/color_buy"
+    fab:menu_colorRipple="@color/color_buy"
+    fab:menu_labels_ellipsize="end"
+    fab:menu_labels_singleLine="true"
+    fab:menu_fab_size="normal"
+    fab:menu_backgroundColor="@color/transparent">
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/textmsg"
+        fab:backgroundTint="#ff9800"
+        fab:fab_colorNormal="#ff9800"
+        fab:fab_size="mini"
+        fab:fab_label="日记" />
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/record"
+        fab:backgroundTint="#4284E4"
+        fab:fab_colorNormal="#4284E4"
+        fab:fab_size="mini"
+        fab:fab_label="视频" />
+
+</com.github.clans.fab.FloatingActionMenu>
+</LinearLayout>

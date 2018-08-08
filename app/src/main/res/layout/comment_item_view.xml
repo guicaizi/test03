@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       tools:showIn="@layout/layout_modle">
+
+
+    <RelativeLayout
+        android:id="@+id/comment_data"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_empty"
+            style="@style/normal_font14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center"
+            android:text="暂无评论"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/lin_comment_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:paddingTop="@dimen/space_10"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_comment_item_icon"
+                    android:layout_width="@dimen/space_50"
+                    android:layout_height="@dimen/space_50"
+                    android:scaleType="centerInside"/>
+
+                <TextView
+                    android:id="@+id/tv_comment_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:text="匿名"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/space_16.5"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_comment_item_time"
+                    style="@style/normal_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="2017-08-02 09:35:45"/>
+
+                <com.yun.software.shangcheng.ui.ViewWidget.MyRatingBar
+                    android:id="@+id/ratingbar_coment_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    app:space_width="3dp"
+                    app:star_height="12dp"
+                    app:star_hollow="@drawable/ic_rating_bar_hollow"
+                    app:star_max="5"
+                    app:star_rating="0"
+                    app:star_solid="@drawable/ic_rating_bar_solid"
+                    app:star_width="12dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_coment_item_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ahhaodosoow"
+                android:textColor="@color/font_color_black"
+                android:textSize="@dimen/space_11"/>
+
+            <TextView
+                android:id="@+id/tv_see_allcoment"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_20"
+                android:background="@drawable/round_strock_red_shape"
+                android:gravity="center"
+                android:text="查看全部评论"
+                android:textColor="@color/red"
+                android:textSize="@dimen/space_14"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:background="@color/color_bg"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingTop="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_realy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:drawableLeft="@drawable/img_linxin"
+            android:drawablePadding="@dimen/space_10"
+            android:gravity="center"
+            android:text="正品保证"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/space_12.5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_toRightOf="@id/tv_realy"
+            android:drawableLeft="@drawable/img_linxin"
+            android:drawablePadding="@dimen/space_10"
+            android:text="七天退货"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/space_12.5"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:src="@drawable/img_yuanmore"/>
+
+    </RelativeLayout>
+</merge>

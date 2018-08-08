@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="200dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/space_10"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_comment_item_icon"
+                android:layout_width="@dimen/space_50"
+                android:layout_height="@dimen/space_50"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/space_16.5"
+                android:text="匿名"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:text="2017-08-02 09:35:45"
+              style="@style/normal_font"
+              android:layout_height="wrap_content"/>
+
+            <com.yun.software.touhang.ui.main.ViewWidget.MyRatingBar
+                android:layout_alignParentRight="true"
+                android:id="@+id/my_rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:star_width="20dp"
+                app:star_height="20dp"
+                app:space_width="5dp"
+                app:star_solid="@drawable/ic_rating_bar_solid"
+                app:star_hollow="@drawable/ic_rating_bar_hollow"
+                app:star_rating="4"
+                app:star_max="5" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="ahhaodosoow"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

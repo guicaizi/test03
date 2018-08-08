@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_above="@+id/v_line"
+        android:id="@+id/Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="@dimen/space_3"
+        android:background="#ABA8A8"
+        android:layout_above="@+id/gr_check"
+        />
+
+    <RadioGroup
+        android:id="@+id/gr_check"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_1"
+        android:baselineAligned="false"
+        >
+        <RadioButton
+            android:id="@+id/Generic_Rb01"
+            style="@style/TabNavigation"
+            android:text="@string/shop_home"
+            android:drawableTop="@drawable/tab_shop_home_selector"
+            android:button="@null"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/Generic_Rb02"
+            style="@style/TabNavigation"
+            android:text="@string/shop_Mall"
+            android:drawableTop="@drawable/tab_shop_mall_selector"
+            android:button="@null"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/Generic_Rb03"
+            style="@style/TabNavigation"
+            android:text="@string/shop_beautiful"
+            android:drawableTop="@drawable/tab_shop_biautiful_selector"
+            android:button="@null"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/Generic_Rb04"
+            style="@style/TabNavigation"
+            android:text="@string/shop_car"
+            android:drawableTop="@drawable/tab_shop_car_selector"
+            android:button="@null"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/Generic_Rb05"
+            style="@style/TabNavigation"
+            android:text="@string/shop_my"
+            android:drawableTop="@drawable/tab_shop_my_selector"
+            android:button="@null"
+            android:checked="true"
+            />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_height="46dp">
+
+        <ImageView
+            android:id="@+id/iv_first"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_three"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_four"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_five"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_beautiful"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/head_icon5" />
+
+
+
+</RelativeLayout>

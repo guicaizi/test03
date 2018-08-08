@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+   <include layout="@layout/include_top"
+             android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+    <ScrollView
+        android:id="@+id/sc_view"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/re_choice_address"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_marginBottom="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_confirm_name"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="@dimen/space_13"
+                    android:textColor="@color/font_color_black"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_confirm_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/space_13"
+                    android:textColor="@color/font_color_black"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_confirm_address"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_below="@+id/tv_confirm_name"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/img_adress"
+                    android:drawablePadding="@dimen/space_5"
+                    android:textColor="@color/font_color_black"
+                    android:textSize="@dimen/space_13"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/img_back_right"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <com.yun.software.shangcheng.ui.ViewWidget.NoScrollListView
+                android:overScrollMode="never"
+                android:id="@+id/list_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="10dp"
+                android:divider="@null"
+                android:background="@color/white"
+                android:listSelector="@color/transparent"
+                android:longClickable="true"/>
+
+            <include layout="@layout/commit_order_des"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_45">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/icon_yesred"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:textColor="@color/font_color_black"
+                    android:drawablePadding="@dimen/space_5"
+                    android:layout_centerVertical="true"
+                    android:textSize="13dp"
+                    android:text="微信支付"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_yes"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="10dp"/>
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/re_platfrom_coupon"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="@dimen/space_50">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="@dimen/space_10"
+                    android:layout_width="wrap_content"
+                    android:gravity="center|left"
+                    android:text="优惠券"
+                    android:layout_height="@dimen/space_50"
+                    android:textSize="@dimen/space_13"
+                    style="@style/amost_zhong_black"/>
+
+                <TextView
+                    android:id="@+id/tv_platfrom_coupon"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:layout_width="wrap_content"
+                    android:drawableRight="@drawable/img_back_right"
+                    android:drawablePadding="@dimen/space_5"
+                    android:gravity="center"
+                    android:layout_height="@dimen/space_50"
+                    android:textSize="@dimen/space_13"
+                    style="@style/amost_zhong_black"/>
+                <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#CCC"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_45">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:textColor="@color/font_color_black"
+                    android:layout_centerVertical="true"
+                    android:textSize="13dp"
+                    android:text="匿名购买"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#CCC"/>
+                <Switch
+                    android:layout_marginRight="@dimen/space_5"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/v_switch_1"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:thumb="@drawable/thumb"
+                    android:track="@drawable/track"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/rlBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/space_10"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvCountMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="合计: 0.0"
+                    android:textColor="#ff2600"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnSettle"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="#FFF"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
