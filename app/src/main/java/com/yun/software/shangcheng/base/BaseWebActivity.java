@@ -11,17 +11,23 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.just.agentweb.AgentWeb;
 import com.just.agentweb.DefaultWebClient;
 import com.just.agentweb.LogUtils;
 import com.yun.software.shangcheng.R;
 import com.yun.software.shangcheng.ui.ViewWidget.WebLayout;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 /**
  * Created by cenxiaozhong on 2017/5/26.
@@ -33,15 +39,21 @@ public class BaseWebActivity extends AppCompatActivity {
 
 
     protected AgentWeb mAgentWeb;
+    @Bind(R.id.tvTitle)
+    TextView tvTitle;
+    @Bind(R.id.iv_back)
+    ImageView ivBack;
     private LinearLayout mLinearLayout;
     private AlertDialog mAlertDialog;
+
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_web);
+        ButterKnife.bind(this);
         long p = System.currentTimeMillis();
+        tvTitle.setText("关于我们");
 
         mLinearLayout = (LinearLayout) this.findViewById(R.id.container);
         mAgentWeb = AgentWeb.with(this)
@@ -57,17 +69,23 @@ public class BaseWebActivity extends AppCompatActivity {
                 .createAgentWeb()
                 .ready()
                 .go(getUrl());
-//        mAgentWeb.getWebCreator().getWebView().setOnScrollChangeListener(new View.OnScrollChangeListener() {
-//            @Override
-//            public void onScrollChange(View v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
-//                LogUtils.i("kankan","scrollY"+scrollY);
-//            }
-//        });
+        //        mAgentWeb.getWebCreator().getWebView().setOnScrollChangeListener(new View.OnScrollChangeListener() {
+        //            @Override
+        //            public void onScrollChange(View v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+        //                LogUtils.i("kankan","scrollY"+scrollY);
+        //            }
+        //        });
 
         //mAgentWeb.getUrlLoader().loadUrl(getUrl());
 
         long n = System.currentTimeMillis();
         Log.i("Info", "init used time:" + (n - p));
+        ivBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
 
     }
@@ -76,7 +94,7 @@ public class BaseWebActivity extends AppCompatActivity {
         @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-            LogUtils.i("kankan","request====" +request.getUrl().toString());
+            LogUtils.i("kankan", "request====" + request.getUrl().toString());
             return super.shouldOverrideUrlLoading(view, request);
 
 
@@ -92,15 +110,15 @@ public class BaseWebActivity extends AppCompatActivity {
         @Override
         public void onProgressChanged(WebView view, int newProgress) {
             //do you work
-//            Log.i("Info","onProgress:"+newProgress);
+            //            Log.i("Info","onProgress:"+newProgress);
         }
 
         @Override
         public void onReceivedTitle(WebView view, String title) {
             super.onReceivedTitle(view, title);
-//            if (mTitleTextView != null) {
-//                mTitleTextView.setText(title);
-//            }
+            //            if (mTitleTextView != null) {
+            //                mTitleTextView.setText(title);
+            //            }
         }
     };
 

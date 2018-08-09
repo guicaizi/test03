@@ -23,7 +23,6 @@ public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        MyLogUtils.i("options","lala1");
         AppApplication.api.handleIntent(getIntent(), this);
         EventBus.getDefault().post(new MessageCode("code","dismiss"));
     }
@@ -31,7 +30,6 @@ public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        MyLogUtils.i("options","lala2");
         setIntent(intent);
         AppApplication.api.handleIntent(intent, this);
     }

@@ -195,11 +195,17 @@ public class CommitOrderActivity extends BaseActivity {
                  }
                  */
                 case REQUEST_SUBMIT_ODERS:
+                    if(limitOptions){
+                        showShortToast("正在支付中...");
+                        return;
+                    }
                     if(StringUtils.isEmpty(tvConfirmAddress.getText().toString())){
                         ShowDialog();
                         limitOptions=false;
                         return;
                     }
+                    limitOptions=true;
+                    startProgressDialog("正在支付....");
                     Map map3 = new HashMap();
                     map3.put("ids", choiceids);
                     map3.put("userId", biz.getCustomToken());
@@ -396,12 +402,7 @@ public class CommitOrderActivity extends BaseActivity {
         btnSettle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(limitOptions){
-                    showShortToast("正在支付中...");
-                    return;
-                }
-                limitOptions=true;
-                startProgressDialog("正在支付....");
+
                 loadDate(REQUEST_SUBMIT_ODERS);
             }
         });

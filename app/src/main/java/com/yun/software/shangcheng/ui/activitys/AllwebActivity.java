@@ -13,24 +13,23 @@ import com.yun.software.shangcheng.ui.utils.MyLogUtils;
  * Created by yanliang
  * on 2018/7/4 10:08
  */
-    public class AllwebActivity extends BaseWebActivity{
-    public static final  String TAG="AllwebActivity";
+public class AllwebActivity extends BaseWebActivity {
+    public static final String TAG = "AllwebActivity";
 
-//    @Override
+    //    @Override
     public String getUrl() {
         String weburl = null;
-        Bundle bundle =getIntent().getBundleExtra(AppConfig.START_ACTIVITY_PUTEXTRA);
-        if(bundle!=null){
-            if(bundle.containsKey("weburl")){
-                weburl=bundle.getString("weburl");
-                MyLogUtils.i(TAG,"传递过来的网址"+weburl);
+        Bundle bundle = getIntent().getBundleExtra(AppConfig.START_ACTIVITY_PUTEXTRA);
+        if (bundle != null) {
+            if (bundle.containsKey("weburl")) {
+                weburl = bundle.getString("weburl");
+                MyLogUtils.i(TAG, "传递过来的网址" + weburl);
 
             }
         }
 
         return weburl;
     }
-
 
 
     @Override
@@ -52,13 +51,13 @@ import com.yun.software.shangcheng.ui.utils.MyLogUtils;
         @JavascriptInterface
         public void callAndroid(String jsReturn) {
             MyLogUtils.i("options", "web调用Android返回字段===》" + jsReturn);
-             finish();
+            finish();
         }
     }
+
     @Override
     protected void onResume() {
         super.onResume();
-
 
 
         //测试Cookies
